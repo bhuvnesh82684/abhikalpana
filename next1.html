@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+
+
+  <title>next</title>
+  <meta charset="utf-8">
+  
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	
+#qwe{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+}
+
+
+  
+ .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+</style>
+</head>
+<body>
+ <div class="wrap">
+  
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sidebarNavigation " data-sidebarClass="navbar-dark">
+        <a class="navbar-brand ml-4" href="intro3.html"> <img src="img/tlogo.png" alt="ABHIKALPANA" class="img-fluid"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-5 dropdown ">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Our Story<span class="caret"></span></a>
+            <ul class="dropdown-menu bg-dark" style="border: none;">
+              <li><a class="dropdown-item nav-link" href="intro3.html#history" onmouseover='this.style.color="black"' onmouseout='this.style.color="rgba(255,255,255,0.5)"'>History</a></li>
+              <li><a class="dropdown-item nav-link" href="intro3.html#vision" onmouseover='this.style.color="black"' onmouseout='this.style.color="rgba(255,255,255,0.5)"'>Vision</a></li>
+              <li><a class="dropdown-item nav-link" href="intro3.html#mission" onmouseover='this.style.color="black"' onmouseout='this.style.color="rgba(255,255,255,0.5)"'>Mission</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mr-5"><a class="nav-link" href="#">Pillars of Action</a></li>
+		  <li class="nav-item mr-5"><a class="nav-link" href="Template2.php">Volunteership</a></li>
+		  <li class="nav-item mr-5"><a class="nav-link" href="events.html">Events</a></li>
+		  <li class="nav-item mr-5"><a class="nav-link" href="#">Gallery</a></li>
+		  <li class="nav-item mr-5"><a class="nav-link" href="template.html">Contact Us</a></li>
+        </ul>
+        </ul>
+      </div>
+     </nav>
+   <!-- </div>-->
+ <div class="jumbotron" id=qwe>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="ne3.jpg" alt="q1" width="100%" >
+    </div>
+
+    <div class="item">
+      <img src="ne4.jpg" alt="q2" width="100%" >
+    </div>
+
+    <div class="item">
+      <img src="ne5.jpg" alt="q3" width="100%">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  </div>
+  </div>
+ 
+  <div class="row">
+		<div class="col-lg-1"  >
+		
+		</div>
+		<div class="col-lg-10"style="height:100px; text-align:center;padding:0px;">
+		 <b style="font-size: -webkit-xxx-large; color:red; opacity:0.7" id="kicktime"></b>
+		
+		</div>
+		<div class="col-lg-1">
+		</div>
+  </div>
+
+  	<script>
+	
+	var target = new Date("Oct 27, 2018 09:00:00").getTime();
+	var x = setInterval(function() {
+    var now = new Date().getTime();
+    var remain = target - now;
+    var days = Math.floor(remain / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((remain % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((remain % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((remain % (1000 * 60)) / 1000);
+    
+    
+    document.getElementById("kicktime").innerHTML = days + "days " + hours + "hours "
+    + minutes + "min " + seconds + "second";
+    
+    
+    if (remain < 0) {
+        clearInterval(x);
+        document.getElementById("kicktime").innerHTML = "ITS TIME TO kick it";
+    }
+}, 1000);
+</script>
+
+	
+  
+ <div class="container" style="margin-top:60px;"> 
+<div class="row">
+<div class="col-lg-6">
+	<h1 style="font-family:comic sans MS">KICKIT 2.0</h1><br>
+	<h5>This campaign is being held as a fundariser for abhikalpana.</h5>
+    <h5>your kick can be someone's smile!:)</h4>
+    <h5>come out and watch your favorite college clubs battle it out on the ground.</h5>
+    <h3 ><b>Venue:</b></h3>
+	<h4 style="padding-left:20px;">Sir MVIT football ground,bengaluru-562157</h4>
+    <h3><b>Date:</b></h3>
+	<h4 style="padding-left:20px;">27-October-2018</h4>
+</div>
+<!--<div class="col-lg-6">
+	<h2 style="font-family:comic sans MS">Register now and be a part of our family</h2>
+	<form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="name" class="form-control" id="pwd">
+  </div>
+  <div class="form-group">
+    <label for="phone.no">Phone:</label>
+    <input type="phone" class="form-control" id="phone">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary btn-sm">register</button>
+</form>
+</div>-->
+</div>
+</div>
+	<footer>
+      <div class="container-fluid foot">
+        <div class="row">
+
+          <div class="col-sm-2 col-md-2 col-lg-2">
+            <p>Copyright &copy; 2018 ABHIKALPANA</p>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+            <p>About Us</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-sm-2 col-md-2 col-lg-2">
+            <p>Navigation</p>
+            <ul class="unstyled">
+              <li> <a href="intro3.html">Home</a> </li>
+              <li> <a href="#">Categories</a> </li>
+              <li> <a href="Template2.php">Volunteer Registration</a> </li>
+              <li> <a href="events.html">Events</a> </li>
+              <li> <a href="#">Gallery</a> </li>
+              <li> <a href="template.html">Contact Us</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-md-2 col-lg-2 " >
+            <p>Follow Us</p>
+            <ul class="unstyled" style="margin-left:10px;">
+              <li> <a class="fa fa-facebook" href="https://www.facebook.com/abhikalpanatrust/"></a> </li>
+              <li> <a class="fa fa-instagram" href="https://www.instagram.com/abhikalpanatrust/"></a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-md-2 col-lg-2">
+            <p>Register above to be a part of ABHIKALPANA</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="container-fluid baseline">
+        <h6><span class="oi oi-code"></span> with <span class="oi oi-heart"></span> by Team ABHIKALPANA</h6>
+      </div>
+    </footer>
+	
+	
+
+	
+	
+
+</body>
+</html>
+
+
+

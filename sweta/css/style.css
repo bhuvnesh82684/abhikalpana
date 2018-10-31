@@ -1,0 +1,57 @@
+body{
+  background-image: url("img/bgpic.jpg");
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+.wrap{
+  min-height: 100vh;
+}
+#snowflakeContainer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.snowflake {
+	padding-left: 15px;
+	font-family: Cambria, Georgia, serif;
+	font-size: 14px;
+	line-height: 24px;
+	position: fixed;
+	color:#ffffff;
+	user-select: none;
+	z-index: 1000;
+}
+.snowflake:hover {
+	cursor: default;
+}
+.foot{
+
+  background-color: #333;
+  color: #eee;
+  font-size: 14px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+ul.unstyled{
+  list-style: none;
+  padding: 0;
+}
+
+ul.unstyled a{
+  color: #eee;
+}
+
+
+.baseline{
+  margin: 0;
+  padding: 5px;
+  height: 100%;
+  background-color: black;
+  color: grey;
+  text-align: center;
+}
+.h1{
+font-family: 'Love Ya Like A Sister', cursive;
+}
